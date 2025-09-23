@@ -1,0 +1,3 @@
+add_subdirectory(homework_3)
+add_subdirectory(lesson4)
+add_subdirectory(my_first_c_project)
