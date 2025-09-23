@@ -1,4 +1,10 @@
 # include "name_length.h"
 int name_length(const char* name) {
-return 0;
+    int counter = 0;
+    int i = 0;
+    while (name[i]!= '\0') {
+        i++;
+    }
+
+    return counter;
 }
