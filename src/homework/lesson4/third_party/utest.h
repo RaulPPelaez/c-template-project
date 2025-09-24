@@ -61,11 +61,11 @@ typedef uint64_t utest_uint64_t;
 typedef uint32_t utest_uint32_t;
 #endif
 
+#include <errno.h>
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <errno.h>
 
 #if defined(__cplusplus)
 #if defined(_MSC_VER) && !defined(_CPPUNWIND)
@@ -625,20 +625,20 @@ utest_type_printer(long long unsigned int i) {
 #define utest_type_printer(val)                                                \
   UTEST_PRINTF(                                                                \
       _Generic((val),                                                          \
-      signed char: "%d",                                                       \
-      unsigned char: "%u",                                                     \
-      short: "%d",                                                             \
-      unsigned short: "%u",                                                    \
-      int: "%d",                                                               \
-      long: "%ld",                                                             \
-      long long: "%lld",                                                       \
-      unsigned: "%u",                                                          \
-      unsigned long: "%lu",                                                    \
-      unsigned long long: "%llu",                                              \
-      float: "%f",                                                             \
-      double: "%f",                                                            \
-      long double: "%Lf",                                                      \
-      default: _Generic((val - val), ptrdiff_t: "%p", default: "undef")),      \
+          signed char: "%d",                                                   \
+          unsigned char: "%u",                                                 \
+          short: "%d",                                                         \
+          unsigned short: "%u",                                                \
+          int: "%d",                                                           \
+          long: "%ld",                                                         \
+          long long: "%lld",                                                   \
+          unsigned: "%u",                                                      \
+          unsigned long: "%lu",                                                \
+          unsigned long long: "%llu",                                          \
+          float: "%f",                                                         \
+          double: "%f",                                                        \
+          long double: "%Lf",                                                  \
+          default: _Generic((val - val), ptrdiff_t: "%p", default: "undef")),  \
       (val))
 #else
 /*
