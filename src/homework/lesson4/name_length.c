@@ -1,4 +1,13 @@
-# include "name_length.h"
+#include "name_length.h"
+
 int name_length(const char* name) {
-return 0;
+    int i = 0;     
+    int length = 0; 
+
+    while (name[i] != '\0') {
+        if (name[i] != ' ')
+            length++;
+        i++;
+    }
+    return length;
 }
