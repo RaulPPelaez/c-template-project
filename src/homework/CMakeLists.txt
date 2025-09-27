@@ -1,2 +1,2 @@
-add_executable(errors errors.c)
+add_subdirectory(lesson3)
 add_subdirectory(lesson4)
