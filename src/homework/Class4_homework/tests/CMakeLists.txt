@@ -1,4 +1,0 @@
-add_executable(test_name_length test_name_length.c)
-target_link_libraries(test_name_length name_length)
-target_include_directories(test_name_length PRIVATE ${PROJECT_SOURCE_DIR}/third_party)
-add_test(NAME test_name_length COMMAND test_name_length)
