@@ -1,0 +1,5 @@
+add_executable(pointer_shennanigans pointer_shennanigans.c)
+add_executable(string_concat string_concat.c)
+add_executable(malloc_fun malloc_fun.c)
+add_executable(privilege_escalation privilege_escalation.c)
+add_subdirectory(big_boy_malloc)
