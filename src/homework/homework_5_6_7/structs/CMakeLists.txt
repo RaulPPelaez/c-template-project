@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.21)
+project(structs C)
+include_directories(${PROJECT_SOURCE_DIR}/include ${PROJECT_SOURCE_DIR}/third_party)
+add_subdirectory(src)
+enable_testing()
+add_subdirectory(tests)
