@@ -1,0 +1,5 @@
+file(GLOB lesson_sources "${CMAKE_CURRENT_SOURCE_DIR}/[0-9]*.c")
+foreach(src_file ${lesson_sources})
+    get_filename_component(exe_name ${src_file} NAME_WE)
+    add_executable(${exe_name} ${src_file})
+endforeach()
