@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.21)
 project(Homework C)
 
-set(PROJECT_AUTHOR "Raul P. Pelaez")
+set(PROJECT_AUTHOR "Nikita Djanjdgava")
 
 set(CMAKE_C_STANDARD 23)
 set(CMAKE_C_STANDARD_REQUIRED True)
