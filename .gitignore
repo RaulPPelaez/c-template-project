@@ -2,3 +2,4 @@
 build/
 .cache/.vscode/
 src/homework/lesson10/build
+.vscode/
